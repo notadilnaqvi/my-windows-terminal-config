@@ -1,0 +1,51 @@
+{
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "defaultProfile": "{00000000-0000-0000-000000000004}",
+    "copyOnSelect": true,
+    "copyFormatting": false,
+    "profiles":
+    {
+        "defaults":
+        {
+		"startingDirectory": "E://Projects",
+		"colorScheme": "Vintage"
+        },
+        "list":
+        [
+            {
+                "guid": "{00000000-0000-0000-000000000001}",
+                "name": "Windows PowerShell",
+                "commandline": "powershell.exe",
+                "hidden": false
+            },
+            {
+                "guid": "{00000000-0000-0000-000000000002}",
+                "name": "Command Prompt",
+                "commandline": "cmd.exe",
+                "hidden": false
+            },
+            {
+                "guid": "{00000000-0000-0000-000000000003}",
+                "hidden": true,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            },
+            {
+                "guid": "{00000000-0000-0000-000000000004}",
+                "hidden": false,
+                "name": "Git Bash",
+                "commandline": "C:\\Program Files\\Git\\bin\\bash.exe",
+		        "icon": "C:\\Program Files\\Git\\mingw64\\share\\git\\git-for-windows.ico"
+            }
+        ]
+    },
+
+    "schemes": [],
+
+    "keybindings":
+    [
+        { "command": "paste", "keys": "ctrl+v" },
+        { "command": { "action": "splitPane", "split": "auto", "splitMode": "duplicate" }, "keys": "ctrl+d" },
+	    { "command": "closePane", "keys": "ctrl+w" }
+    ]
+}
